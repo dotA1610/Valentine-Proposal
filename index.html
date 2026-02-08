@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Be My Valentine? 💘</title>
+  <title>Valentine Quest? 💘</title>
   <style>
     :root{
       --text: rgba(255,255,255,0.92);
@@ -423,7 +423,7 @@
   <div class="modal" id="valModal" role="dialog" aria-modal="true" aria-label="Valentine card">
     <div class="modalCard">
       <div class="modalTop">
-        <h2>Okay… you passed 😭💘</h2>
+        <h2>Wow!!! you passed 😭💘</h2>
       </div>
       <div class="modalBody">
         This is your official Valentine card. Read this and answer honestly 😳
@@ -445,15 +445,11 @@
   const MUSIC_SRC = "music.mp3"; // <- put your song as "music.mp3" later (or rename here)
 
   // 💌 Your custom Valentine message (EMPTY space for you)
-  const FINAL_VALENTINE_MESSAGE = `
-[TYPE YOUR OWN WORDS HERE…]
-
-`;
+  const FINAL_VALENTINE_MESSAGE =  "Hey BabyGirl, So you made it HUH.I'm Very Proud of you and i love you soo much. I know you've always asked me for love letter,Thanks for coming into my life and turning me into a person i didnt even knew existed haha and you showed me what true love is and you stayed with me whenever i needed you and im soo grateful for it.I really really love you soo much babygirl and I would like to ask you something.Would you love to be my Valentine?";
 
   // 😈 Wrong answer teasing (put YOUR words)
   const WRONG_TEASE_LINES = [
     "Aiyo wrong 😭 you don’t know me meh?",
-    "Fake girlfriend detected 🤨 try again",
     "Nahhh that one is wrong 😤",
     "Bro… how you miss that 💀",
     "Wrong 😭 I’m watching you",
@@ -463,25 +459,25 @@
   const QUESTIONS = [
     { q: "What’s my favorite drink?", a: ["Teh ais", "Milo ais", "Kopi O"], correctIndex: 1 },
     { q: "What’s my dream car brand?", a: ["BMW", "Mercedes", "Porsche"], correctIndex: 2 },
-    { q: "What do I love more?", a: ["Gaming", "Sleeping", "Studying"], correctIndex: 0 },
+    { q: "What do I love more?", a: ["Gaming", "Sleeping", "Studying"], correctIndex: 1 },
     { q: "What’s my go-to food?", a: ["Nasi lemak", "Briyani", "Maggi"], correctIndex: 0 },
     { q: "Which one describes me best?", a: ["Soft boi", "Chaos but lovable", "Serious 24/7"], correctIndex: 1 },
 
     { q: "My birthday is on…", a: ["16 Feb", "12 Jun", "2 Aug"], correctIndex: 0 },
-    { q: "My favorite color is…", a: ["Black", "Blue", "Pink"], correctIndex: 0 },
+    { q: "My favorite color is…", a: ["Black", "Blue", "Pink"], correctIndex: 1 },
     { q: "I’m most likely to say…", a: ["Brooo", "Hello sir", "Good day ma’am"], correctIndex: 0 },
-    { q: "I’d pick this date plan:", a: ["Movie + snack", "Long drive + music", "Cafe + photos"], correctIndex: 1 },
+    { q: "I’d pick this date plan:", a: ["Movie + snack", "Long drive + music", "Cafe + photos"], correctIndex: 0 },
     { q: "What would I build for fun?", a: ["PC", "Cake", "Garden"], correctIndex: 0 },
 
-    { q: "My favorite time to text you:", a: ["Morning", "Anytime", "Night"], correctIndex: 2 },
-    { q: "If I’m stressed, I usually:", a: ["Game", "Sleep", "Talk to you"], correctIndex: 2 },
-    { q: "I’m scared of:", a: ["Nothing", "Heights", "Losing you"], correctIndex: 2 },
-    { q: "My love language vibes:", a: ["Words", "Time", "Gifts"], correctIndex: 1 },
-    { q: "What makes me smile fastest?", a: ["Your laugh", "Food", "Money"], correctIndex: 0 },
+    { q: "My favorite time to text you:", a: ["Morning", "Anytime", "Night"], correctIndex: 1 },
+    { q: "If I’m stressed, I usually:", a: ["Game", "Sleep", "Talk"], correctIndex: 0 },
+    { q: "I’m scared of:", a: ["Nothing", "Heights", "Cockroach"], correctIndex: 1 },
+    { q: "My love language vibes:", a: ["Words", "Time", "Gifts"], correctIndex: 2 },
+    { q: "What makes me smile fastest?", a: ["Tech", "Food", "Money"], correctIndex: 0 },
 
     { q: "I get jealous when you:", a: ["Ignore me", "Talk to random boys", "All of the above"], correctIndex: 2 },
-    { q: "My ideal weekend:", a: ["Work", "Sleep + you", "Gym"], correctIndex: 1 },
-    { q: "If we argue I want:", a: ["Silence", "Quick fix + hug", "Long debate"], correctIndex: 1 },
+    { q: "My ideal weekend:", a: ["Work", "Sleep", "Gym"], correctIndex: 1 },
+    { q: "If we argue I want:", a: ["Silence", "Quick fix + hug", "Long debate"], correctIndex: 0 },
     { q: "The one thing I’ll always do:", a: ["Protect you", "Tease you", "Both"], correctIndex: 2 },
     { q: "Final boss question: Will you be my Valentine? 😳", a: ["No", "Maybe", "YES"], correctIndex: 2 },
   ];
